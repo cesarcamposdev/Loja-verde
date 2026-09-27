@@ -1,0 +1,156 @@
+/* Reset básico: remove margens e paddings padrão dos navegadores */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fonte e cor base de toda a página */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: #2b2b2b;
+  background-color: #fafaf7;
+}
+
+/* Cabeçalho fixo no topo, com logo e menu lado a lado */
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #2f5233;
+  color: #ffffff;
+}
+
+.logo {
+  font-size: 1.5rem;
+}
+
+/* Menu de navegação, itens em linha com espaço entre eles */
+.menu {
+  display: flex;
+  gap: 24px;
+}
+
+.menu a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menu a:hover {
+  color: #d9c589;
+}
+
+/* Seção de destaque logo abaixo do cabeçalho */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background-color: #e8efe4;
+}
+
+.hero h2 {
+  font-size: 1.8rem;
+  margin-bottom: 12px;
+  color: #2f5233;
+}
+
+.hero p {
+  margin-bottom: 20px;
+}
+
+/* Botão principal do hero */
+.botao {
+  background-color: #2f5233;
+  color: #ffffff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.botao:hover {
+  background-color: #24401f;
+}
+
+/* Título usado em cada seção de conteúdo */
+.titulo-secao {
+  text-align: center;
+  color: #2f5233;
+  margin-bottom: 32px;
+}
+
+/* Seção de produtos */
+.produtos {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Grade que organiza os cards de produto lado a lado */
+.grade-produtos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+
+/* Cada cartão individual de produto */
+.card {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 16px;
+  width: 220px;
+  text-align: center;
+}
+
+/* Espaço reservado para a imagem do produto */
+.card-imagem {
+  width: 100%;
+  height: 140px;
+  background-color: #d9e4d3;
+  border-radius: 4px;
+  margin-bottom: 12px;
+}
+
+.preco {
+  color: #2f5233;
+  font-weight: bold;
+  margin: 8px 0;
+}
+
+.botao-card {
+  background-color: #2f5233;
+  color: #ffffff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.botao-card:hover {
+  background-color: #24401f;
+}
+
+/* Seção "Sobre a loja" */
+.sobre {
+  background-color: #e8efe4;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.sobre p {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Rodapé final */
+.rodape {
+  text-align: center;
+  padding: 24px;
+  background-color: #2f5233;
+  color: #ffffff;
+}
